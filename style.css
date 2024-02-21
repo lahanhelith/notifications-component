@@ -1,0 +1,182 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+*{
+    box-sizing:border-box;
+}
+
+:root{
+    --red: hsl(1, 90%, 64%);
+    --blue: hsl(219, 85%, 26%);
+    --white: hsl(0, 0%, 100%);
+    --very-light-grayish-blue: hsl(210, 60%, 98%);
+    --light-grayish-blue-1: hsl(211, 68%, 94%);
+    --light-grayish-blue-2: hsl(205, 33%, 90%);
+    --grayish-blue: hsl(219, 14%, 63%);
+    --dark-grayish-blue: hsl(219, 12%, 42%);
+    --very-dark-blue: hsl(224, 21%, 14%);
+}
+
+@font-face {
+    font-family: "Plus Jakarta Sans";
+    src: url("./assets/fonts/PlusJakartaSans-VariableFont_wght.ttf");
+}
+
+body{
+    margin:0;
+    min-height:100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family:"Plus Jakarta Sans";
+}
+
+main{
+    max-width:680px;
+    padding:1rem;
+}
+
+.header{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.notifications{
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+}
+
+.notification-container{
+    display:flex;
+    align-items:center;
+    min-width:100%;
+    margin-top:0.5rem;
+}
+
+.notification-image{
+    display:block;
+    width:40px;
+    margin-right:0.8rem;
+}
+
+.notification-detail, .notification-time{
+    display:block;
+}
+
+.user{
+    font-weight:800;
+    display:inline;
+}
+
+#unread-notifications{
+    background-color: var(--blue);
+    color:var(--white);
+    font-size:1rem;
+    margin-left:1rem;
+    padding:0.05rem 1rem;
+    border-radius:8px;
+    display:inline;
+    line-height:2rem;
+    font-weight:800;
+}
+
+h1{
+    margin:0;
+    line-height:2rem;
+    font-size:1.5rem;
+}
+
+.message-block{
+    margin-left:calc(50px + 2rem);
+    background-color: var(--very-light-grayish-blue);
+    border:1px solid var(--light-grayish-blue-2);
+    padding:1rem;
+    border-radius:0.8rem;
+    transition:background-color 150ms;
+    cursor:pointer;
+}
+
+.notification-with-image{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    width:100%;
+}
+
+.notification-text{
+    width:100%;
+}
+
+.group-profile{
+    width:40px;
+    display:block;
+    cursor:pointer;
+    transition:width 150ms;
+}
+
+.group-profile:hover{
+    width:42px;
+}
+
+.highlight-group{
+    font-weight:800;
+    color:var(--blue);
+}
+
+.unread{
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    background-color:var(--red);
+    display:inline-block;
+}
+
+.notification-container{
+    padding:0.5rem;
+    border-radius:8px;
+}
+
+.unread-container{
+    background-color:var(--light-grayish-blue-1);
+}
+
+.notification-time{
+    color:var(--dark-grayish-blue);
+}
+
+#mark-as-read-btn{
+    color:var(--dark-grayish-blue);
+    cursor: pointer;
+    transition:color 150ms;
+}
+
+#mark-as-read-btn:hover{
+    color:var(--blue);
+}
+
+.highlight-group, .highlight-post, .user{
+    cursor: pointer;
+    font-weight:800;
+    transition:color 150ms;
+}
+
+.highlight-post{
+    color:var(--dark-grayish-blue);
+}
+
+.highlight-post:hover, .user:hover{
+    color:var(--blue);
+}
+
+.message-block:hover{
+    background-color:var(--light-grayish-blue-1)
+}
+
+@media only screen and (max-width:400px){
+    :root{
+        font-size:15px;
+    }
+}

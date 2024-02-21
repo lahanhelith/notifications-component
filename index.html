@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Notifications page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <div class="header">
+      <div class="notifications">
+        <h1>Notifications</h1>
+        <span id="unread-notifications">3</span>
+      </div>
+      <span id="mark-as-read-btn">Mark all as read</span>
+    </div>
+    <div class="notification-container unread-container">
+      <img class="notification-image" src="./assets/images/avatar-mark-webber.webp">
+      <div class="notification-text">
+        <span class="notification-detail"><span class="user">Mark Webber</span> reacted to your recent post <span class="highlight-post">My first tournament today!</span> <div class="unread"></div></span>
+        <span class="notification-time">1m ago</span>
+      </div>
+    </div>
+    <div class="notification-container unread-container">
+      <img class="notification-image" src="./assets/images/avatar-angela-gray.webp">
+      <div class="notification-text">
+        <span class="notification-detail"><span class="user">Angela Gray</span> followed you <div class="unread"></div></span>
+        <span class="notification-time">5m ago</span>
+      </div>
+    </div>
+    <div class="notification-container unread-container">
+      <img class="notification-image" src="./assets/images/avatar-jacob-thompson.webp">
+      <div class="notification-text">
+        <span class="notification-detail"><span class="user">Jacob Thompson</span> has joined your group <span class="highlight-group">Chess Club <div class="unread"></div></span></span>
+        <span class="notification-time">1 day ago</span>
+      </div>
+    </div>
+    <div class="notification-with-message">
+      <div class="notification-container">
+        <img class="notification-image" src="./assets/images/avatar-rizky-hasanuddin.webp">
+        <div class="notification-text">
+          <span class="notification-detail"><span class="user">Rizky Hasanuddin</span> sent you a private message</span>
+          <span class="notification-time">5 days ago</span>
+        </div>
+      </div>
+      <div class="message-block">
+        <span>Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
+          I'm already having lots of fun and improving my game.</span>
+      </div>
+    </div>
+    <div class="notification-container">
+      <img class="notification-image" src="./assets/images/avatar-kimberly-smith.webp">
+      <div class="notification-with-image">
+        <div class="notification-text">
+          <span class="notification-detail"><span class="user">Kimberly Smith</span> commented on your picture</span>
+          <span class="notification-time">1 week ago</span>
+        </div>
+        <img class="group-profile" src="./assets/images/image-chess.webp">
+      </div>
+    </div>
+    <div class="notification-container">
+      <img class="notification-image" src="./assets/images/avatar-nathan-peterson.webp">
+      <div class="notification-text">
+        <span class="notification-detail"><span class="user">Nathan Peterson</span> reacted to your recent post <span class="highlight-post">5 end-game strategies to increase your win rate</span></span>
+        <span class="notification-time">2 weeks ago</span>
+      </div>
+    </div>
+    <div class="notification-container">
+      <img class="notification-image" src="./assets/images/avatar-anna-kim.webp">
+      <div class="notification-text">
+        <span class="notification-detail"><span class="user">Anna Kim</span> left the group <span class="highlight-group">Chess Club</span></span>
+        <span class="notification-time">2 weeks ago</span>
+      </div>
+    </div>
+  </main>
+  <script src="./script.js"></script>
+</body>
+</html>
